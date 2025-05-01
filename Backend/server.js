@@ -1,11 +1,12 @@
+require('dotenv').config(); // Load environment variables
+
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
-
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -13,10 +14,11 @@ app.use(bodyParser.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root@123', // your MySQL password if any
-  database: 'campus_maintenance' // make sure this is your DB name
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT || 3306,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
 });
 
 db.connect((err) => {
@@ -31,16 +33,14 @@ db.connect((err) => {
 app.post('/requests', (req, res) => {
   const { building, room_number, description } = req.body;
 
-  console.log('Received request:', req.body); // Debug log
+  console.log('Received request:', req.body);
 
   if (!building || !room_number || !description) {
     return res.status(400).json({ message: 'All fields are required.' });
   }
 
-  // Replace this with actual user session/email logic later
-  const email = 'alice@student.com'; // Hardcoded for now
+  const email = 'alice@student.com'; // Placeholder for actual session/email logic
 
-  // Get user_id from users table
   const getUserQuery = 'SELECT user_id FROM users WHERE email = ?';
   db.query(getUserQuery, [email], (err, results) => {
     if (err) {
@@ -54,9 +54,10 @@ app.post('/requests', (req, res) => {
 
     const user_id = results[0].user_id;
 
-    // Insert maintenance request (no user_id needed now in request, assuming session-based user_id)
-    const insertQuery = `INSERT INTO requests (building, room_number, description, status_id)
-                         VALUES (?, ?, ?, ?)`;
+    const insertQuery = `
+      INSERT INTO requests (building, room_number, description, status_id)
+      VALUES (?, ?, ?, ?)
+    `;
     db.query(insertQuery, [building, room_number, description, 1], (err, result) => {
       if (err) {
         console.error('Error inserting request:', err);
