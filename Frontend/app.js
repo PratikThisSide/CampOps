@@ -1,5 +1,5 @@
 const express = require('express');
-const notifyAdminWithLatestRequest = require('./sendWhatsApp');
+const notifyAdminWithLatestRequest = require('../Backend/sendWhatsApp');
 
 const app = express();
 app.use(express.json());
