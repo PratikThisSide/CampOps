@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Maintenance System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Create Request</a></li>
+            <li><a href="#">View Requests</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Campus Maintenance System</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2>Create New Request</h2>
+                <p>Submit a new maintenance request for any issue you encounter on campus.</p>
+                <button>Create Request</button>
+            </div>
+            <div class="card">
+                <h2>Pending Requests</h2>
+                <p>View the status of your submitted maintenance requests that are currently in progress.</p>
+                <button>View Requests</button>
+            </div>
+            <div class="card">
+                <h2>Completed Requests</h2>
+                <p>Review all your completed maintenance requests and their resolution details.</p>
+                <button>View History</button>
+            </div>
+            <div class="card">
+                <h2>Reports and Analytics</h2>
+                <p>Access comprehensive reports and analytics on maintenance trends and performance.</p>
+                <button>View Reports</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

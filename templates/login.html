@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Maintenance Portal | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="college-logo">
+        <img src="MITADT.png" alt="College Logo">
+    </div>
+    
+    <div class="login-container">
+        <div class="logo">
+            <i class="fas fa-tools"></i>
+            <h1>Campus Maintenance</h1>
+        </div>
+        <h2>Staff Login</h2>
+        <form id="loginForm">
+            <div class="input-box">
+                <label for="username">Username:</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Enter your Employement ID" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+            </div>
+            <div class="options">
+                <label class="remember-me">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit" class="login-btn">Login <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

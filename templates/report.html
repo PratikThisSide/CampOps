@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report an Issue</title>
+  <style>
+    body { font-family: Arial; background: #fefefe; padding: 20px; }
+    h1 { color: #444; }
+    form {
+      max-width: 500px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Report a New Issue</h1>
+  <form>
+    <label for="location">Location:</label>
+    <input id="location" type="text" placeholder="e.g., Seminar Hall" />
+
+    <label for="issue">Issue:</label>
+    <textarea id="issue" rows="4" placeholder="Describe the issue in detail..."></textarea>
+
+    <button type="submit">Report Issue</button>
+  </form>
+</body>
+</html>

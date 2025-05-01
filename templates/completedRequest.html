@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Status</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f5f9;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 45%;
+      min-height: 300px;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #222;
+    }
+
+    .request {
+      background: #f9f9f9;
+      border-left: 5px solid #4b7bec;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .request.completed {
+      border-left-color: #2ed573;
+    }
+
+    .request button {
+      background: #4b7bec;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .request button:hover {
+      background: #3867d6;
+    }
+
+    .empty {
+      color: #aaa;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Maintenance Requests</h1>
+
+  <div class="container">
+    <div class="section" id="pendingSection">
+      <h2>Pending Requests</h2>
+      <div class="request">
+        AC not working in Room 201
+        <button onclick="markCompleted(this)">Mark Completed</button>
+      </div>
+      <div class="request">
+        Light flickering in Lab 3
+        <button onclick="markCompleted(this)">Mark Completed</button>
+      </div>
+    </div>
+
+    <div class="section" id="completedSection">
+      <h2>Completed Requests</h2>
+      <div id="emptyCompleted" class="empty">No completed requests yet.</div>
+    </div>
+  </div>
+
+  <script>
+    function markCompleted(button) {
+      const request = button.parentElement;
+      const completedSection = document.getElementById('completedSection');
+      const emptyText = document.getElementById('emptyCompleted');
+
+      request.classList.add('completed');
+      button.remove(); // Remove the "Mark Completed" button
+      if (emptyText) emptyText.remove(); // Remove "No completed requests" if exists
+      completedSection.appendChild(request); // Move the request
+    }
+  </script>
+
+</body>
+</html>

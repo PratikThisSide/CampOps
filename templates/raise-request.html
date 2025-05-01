@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Request</title>
+  <link rel="stylesheet" href="stylecreatereq.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create Maintenance Request</h1>
+    <form id="requestForm" class="form">
+      <input type="text" name="building" placeholder="Building Name" required />
+      <input type="text" name="room_number" placeholder="Room Number" required />
+      <textarea name="description" placeholder="Describe the issue..." required></textarea>
+      <button type="submit" class="submit-btn">Submit Request</button>
+    </form>
+    <p id="responseMsg"></p>
+  </div>
+
+  <script>
+    document.getElementById('requestForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = {
+        building: formData.get('building'),
+        room_number: formData.get('room_number'),
+        description: formData.get('description')
+      };
+
+      try {
+        const response = await fetch('http://localhost:5000/requests', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          document.getElementById('responseMsg').textContent = result.message;
+          this.reset();
+        } else {
+          document.getElementById('responseMsg').textContent = result.message || 'Failed to submit request.';
+        }
+
+      } catch (error) {
+        console.error('Submit Error:', error);
+        document.getElementById('responseMsg').textContent = 'Error connecting to server.';
+      }
+    });
+  </script>
+</body>
+</html>
