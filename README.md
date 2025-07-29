@@ -1,1 +1,1 @@
-This is the readme file for the this Project, Campus Maintenance Scheduling System
+This is my second year project, titled "Campus Maintenance Scheduling System", this focuses on the scheduling of requests raised by users. 
