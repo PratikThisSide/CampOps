@@ -87,7 +87,7 @@
 
 <img width="1920" height="895" alt="{F4126D39-21F0-43FE-BA03-8E5D4A41DF89}" src="https://github.com/user-attachments/assets/85ff0576-cd65-40bc-a299-cb4b419aff3c" />
 
-User Panel
+### User Panel
 
 <img width="1920" height="898" alt="{C81D82A3-5BF3-4B8F-93CD-5F5A1C2ABB06}" src="https://github.com/user-attachments/assets/58b11929-db07-4737-a202-f697706615c7" />
 
