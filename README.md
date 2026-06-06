@@ -70,19 +70,37 @@
 
 
 ## Screenshots
+### Login Page
 <img width="1919" height="892" alt="{42DC6225-8E7C-4E23-B83B-AD769903D821}" src="https://github.com/user-attachments/assets/332ca196-b902-4830-8b82-08eaefb73ba2" />
 
 <img width="1919" height="889" alt="{86F01A5C-798F-4213-81FA-F462FC479996}" src="https://github.com/user-attachments/assets/c5bbd820-c145-4953-8edb-834d683d4bb8" />
-
+### Admin Dashboard
 <img width="1920" height="894" alt="{01C910A0-61E6-4852-98AF-851DE8399909}" src="https://github.com/user-attachments/assets/aeb35876-0eb5-4fc3-a42b-be6d1654e7a1" />
 
 <img width="1920" height="893" alt="{DF89B938-AF3D-4CF8-8442-950CAE403C49}" src="https://github.com/user-attachments/assets/b3afca0d-1831-4a46-bec5-449e4deba82e" />
 
 <img width="1920" height="887" alt="{F57EEB51-8EBD-4D7F-B8E2-3D1C2D89F6A8}" src="https://github.com/user-attachments/assets/180fa159-6dbf-4bf6-a6f4-b83786196232" />
-Staff Panel
+
+### Staff Panel
+
 <img width="1920" height="888" alt="{37D7790A-3314-43E5-A8AF-9A0AA8CFC148}" src="https://github.com/user-attachments/assets/3232d782-3d82-4432-8ab4-3cba9aaae24d" />
 
 <img width="1920" height="895" alt="{F4126D39-21F0-43FE-BA03-8E5D4A41DF89}" src="https://github.com/user-attachments/assets/85ff0576-cd65-40bc-a299-cb4b419aff3c" />
+
+User Panel
+
+<img width="1920" height="898" alt="{C81D82A3-5BF3-4B8F-93CD-5F5A1C2ABB06}" src="https://github.com/user-attachments/assets/58b11929-db07-4737-a202-f697706615c7" />
+
+<img width="1920" height="901" alt="{F28C65A1-5161-46C7-B82C-412B8FA514CB}" src="https://github.com/user-attachments/assets/ead3567b-beb8-49f2-9b16-ce4129af60e8" />
+
+<img width="1913" height="490" alt="{2AC66F8C-583A-4F05-8639-84164988E40B}" src="https://github.com/user-attachments/assets/d8d15819-bfc9-45be-a90a-69bc2b5f9115" />
+
+<img width="1920" height="897" alt="{DC68061B-A8A8-483E-8C69-20A8AAD4DBF8}" src="https://github.com/user-attachments/assets/9e8fc9a2-6c34-447d-8013-df622b84d5b7" />
+
+
+
+
+
 
 
 
