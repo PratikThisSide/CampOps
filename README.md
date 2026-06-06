@@ -5,29 +5,6 @@
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 ![Status](https://img.shields.io/badge/status-Active-success)
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Project Architecture](#project-architecture)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Database Setup](#database-setup)
-- [API Documentation](#api-documentation)
-- [Frontend Features](#frontend-features)
-- [Backend Services](#backend-services)
-- [Key Components](#key-components)
-- [Usage Guide](#usage-guide)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 **CampOps** is a comprehensive **Campus Maintenance Scheduling System** designed to streamline and automate the process of managing maintenance requests within a campus environment. The system enables students and teachers to submit maintenance requests, track their status, and allows administrators to manage and prioritize these requests efficiently.
