@@ -68,6 +68,34 @@
 
 ---
 
+
+## Screenshots
+<img width="1919" height="892" alt="{42DC6225-8E7C-4E23-B83B-AD769903D821}" src="https://github.com/user-attachments/assets/332ca196-b902-4830-8b82-08eaefb73ba2" />
+
+<img width="1919" height="889" alt="{86F01A5C-798F-4213-81FA-F462FC479996}" src="https://github.com/user-attachments/assets/c5bbd820-c145-4953-8edb-834d683d4bb8" />
+
+<img width="1920" height="894" alt="{01C910A0-61E6-4852-98AF-851DE8399909}" src="https://github.com/user-attachments/assets/aeb35876-0eb5-4fc3-a42b-be6d1654e7a1" />
+
+<img width="1920" height="893" alt="{DF89B938-AF3D-4CF8-8442-950CAE403C49}" src="https://github.com/user-attachments/assets/b3afca0d-1831-4a46-bec5-449e4deba82e" />
+
+<img width="1920" height="887" alt="{F57EEB51-8EBD-4D7F-B8E2-3D1C2D89F6A8}" src="https://github.com/user-attachments/assets/180fa159-6dbf-4bf6-a6f4-b83786196232" />
+Staff Panel
+<img width="1920" height="888" alt="{37D7790A-3314-43E5-A8AF-9A0AA8CFC148}" src="https://github.com/user-attachments/assets/3232d782-3d82-4432-8ab4-3cba9aaae24d" />
+
+<img width="1920" height="895" alt="{F4126D39-21F0-43FE-BA03-8E5D4A41DF89}" src="https://github.com/user-attachments/assets/85ff0576-cd65-40bc-a299-cb4b419aff3c" />
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## 🏗️ Project Architecture
 
 ```
