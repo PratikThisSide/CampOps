@@ -9,4 +9,6 @@ app.get('/notify-admin', (req, res) => {
   res.send('Admin will be notified of the latest request.');
 });
 
+// This is just a prototype.
+
 app.listen(3000, () => console.log('Server running on port 3000'));
